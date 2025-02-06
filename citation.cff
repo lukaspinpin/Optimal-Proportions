@@ -1,0 +1,9 @@
+cff-version: 1.0.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Pin
+    given-names: Lukas
+title: "Code for Revisiting Optimal Proportions for Binary Responses: Insights from Incorporating the Absent Perspective of Type-I Error Rate Control"
+url: https://github.com/lukaspinpin/Optimal-Proportions.git
+version: 1.0.0
+date-released: 2025-02-06
