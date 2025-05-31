@@ -1,6 +1,6 @@
-# Revisiting Optimal Proportions for Binary Responses: Insights from Incorporating the Absent Perspective of Type-I Error Rate Control
+# Revisiting Optimal Allocations for Binary Responses: Insights from Considering Type-I Error Rate Control
 
-This repository contains the R code necessary to replicate the results presented in the paper *"Revisiting Optimal Proportions for Binary Responses: Insights from Incorporating the Absent Perspective of Type-I Error Rate Control"* by Lukas Pin, Sofía S. Villar and William F. Rosenberger. The code explores optimal proportions in binary response settings, incorporating considerations of type-I error rate control.
+This repository contains the R code necessary to replicate the results presented in the paper *"Revisiting Optimal Allocations for Binary Responses: Insights from Considering Type-I Error Rate Control"* by Lukas Pin, Sofía S. Villar and William F. Rosenberger. The code explores optimal proportions in binary response settings, incorporating considerations of type-I error rate control.
 
 ## Code Structure
 
