@@ -12,6 +12,8 @@ The main simulation function is contained in `Simulation_ErrorRate.R`, which orc
 - **`ERADE.R`** - ERADE targeting RSHIR or Neyman.
 - **`WaldTest.R`** - Conducts statistical testing using the Wald or score test.
 - **`Data_Generator.R`** - Generates simulated datasets for evaluation.
+- **`Figure_1.R`** **`Figure_2_TheoreticalProp.R`** - Generate Figure 1 and 2 of the paper. 
+
 
 ## Prerequisites
 
