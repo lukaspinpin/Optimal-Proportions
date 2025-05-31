@@ -29,7 +29,7 @@ wald.test.binary <- function(x0,x1, measure="sd", signlevel=0.05){
       Z <- (p0-p1)/sqrt(sdx0/n0+sdx1/n1)
     }
     # Agresti and Caffo adjusted estimators
-    p0 <- mean(c(x0,1)); p1 <- mean(c(x1,1))
+    p0 <- mean(c(x0,0,1)); p1 <- mean(c(x1,0,1))
     q0 <- 1-p0 ; q1 <- 1-p1
     sdx0 <- p0*q0; sdx1 <- p1*(1-p1)
     n0 <- length(c(x0,0,1)); n1 <- length(c(x1,0,1)); n <- n0+n1
@@ -74,7 +74,7 @@ wald.test.binary <- function(x0,x1, measure="sd", signlevel=0.05){
       Z <- log(p0*q1/(q0*p1))/ sqrt(1/(n0*p0*q0)+1/(n1*p1*q1))
     }
   }
-  return(c(2*pnorm(-1*abs(Z)),2*pnorm(-1*abs(Z2)),2*pnorm(-1*abs(Z3))))
+  return(c(2*pnorm(-1*abs(Z)),2*pnorm(-1*abs(Z3)),2*pnorm(-1*abs(Z2))))
 }
 
 # Non-binary Wald test
