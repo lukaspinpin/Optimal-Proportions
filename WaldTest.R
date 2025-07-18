@@ -80,17 +80,17 @@ wald.test.binary <- function(x0,x1, measure="sd", signlevel=0.05){
 # Non-binary Wald test
 wald.test <- function(x0,x1, measure="sd"){
   p0 <- mean(x0); p1 <- mean(x1)
-  sdx0 <- sd(x0); sdx1 <- sd(x1)
+  varx0 <- var(x0); varx1 <- var(x1)
   n0 <- length(x0); n1 <- length(x1)
   
   
-  if((sdx0==0 && sdx1==0)){
+  if((varx0==0 && varx1==0)){
     if(p0==p1){Z = 0}
     if(p0<p1){Z = -Inf}
     if(p0>p1){Z = Inf}
   } else {
     if(measure=="sd"){
-      Z <- (p0-p1)/sqrt(sdx0/n0+sdx1/n1)
+      Z <- (p0-p1)/sqrt(varx0/n0+varx1/n1)
     }
   }
   return(2*pnorm(-1*abs(Z)))
